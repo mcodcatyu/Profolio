@@ -1,4 +1,4 @@
- Drug-Induced Protein Conformational Transition Analysis
+## Project :  Drug-Induced Protein Conformational Transition Analysis
 
 ## Abstract
 **English:** This project investigates drug-induced conformational changes in proteins by analyzing the distance variations between four critical amino acid pairs. Using **Principal Component Analysis (PCA)** and **K-Means Clustering**, we identified a distinct transition path: **Initial (Native) ➔ Intermediate ➔ Drug-Induced Stable State**. The emergence of a "Third Configuration" provides quantitative evidence of drug efficacy.---
