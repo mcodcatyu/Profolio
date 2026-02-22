@@ -1,0 +1,47 @@
+services:
+  pgdatabase:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "root"
+      POSTGRES_DB: "openAQ"
+    volumes:
+      - "air_quality_postgres_data:/var/lib/postgresql/data"
+    ports:
+      - "5432:5432"
+    # Added Healthcheck to resolve the "dependency failed" error
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d openAQ"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "admin@admin.com"
+      PGADMIN_DEFAULT_PASSWORD: "root"
+    volumes:
+      - "pgadmin_data:/var/lib/pgadmin"
+    ports:
+      - "8085:80"
+    depends_on:
+      - pgdatabase
+
+  etl_worker:
+    build: .
+    environment:
+      - DB_HOST=pgdatabase
+      - DB_USER=admin
+      - DB_PASSWORD=root
+      - DB_NAME=openAQ
+      - DB_PORT=5432
+    depends_on:
+      pgdatabase:
+        condition: service_healthy
+    volumes:
+      - ~/.kaggle/kaggle.json:/root/.kaggle/kaggle.json:ro
+
+volumes:
+  air_quality_postgres_data:
+  pgadmin_data:
