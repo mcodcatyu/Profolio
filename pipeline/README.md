@@ -43,11 +43,15 @@ The system is orchestrated using **Docker Compose**, managing three primary serv
 - Log in with admin@admin.com / root.
 - After login in pgAdmin-
 - Servers -> register -> server -> connection
-  Hostname: pgdatabase
-  Port: 5432
-  Maintenance database: openAQ
-  Username: admin
-  password: root
+  
+  **Hostname**: pgdatabase
+  
+  **Port**: 5432
+  
+  **Maintenance database**: openAQ
+  
+  **Username**: admin
+  **Password**: root
 
 Check the kaggle_weather table in the openAQ database.
 
