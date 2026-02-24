@@ -51,6 +51,7 @@ The system is orchestrated using **Docker Compose**, managing three primary serv
   **Maintenance database**: openAQ
   
   **Username**: admin
+  
   **Password**: root
 
 Check the kaggle_weather table in the openAQ database.
