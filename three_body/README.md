@@ -1,7 +1,7 @@
-## Project : Three-Body Orbital Simulation
+## Project : Three-Body Orbital Simulation- Sun, Earth & Moon
 
 ###  Abstract 
-This simulation models the Sun-Earth-Moon system using numerical integration to investigate how celestial mass influences orbital eccentricity and lunar periods. The project highlights the complexity of N-body interactions.
+This simulation models the Sun-Earth-Moon system using numerical integration to investigate how celestial mass influences orbital eccentricity and lunar periods. Numba is implemented to accelerate running speed. The project highlights the complexity of N-body interactions.
 
 
 <div align="center">

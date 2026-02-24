@@ -1,10 +1,9 @@
 ## Project :  Drug-Induced Protein Conformational Transition Analysis
 
 ## Abstract
-**English:** This project investigates drug-induced conformational changes in proteins by analyzing the distance variations between four critical amino acid pairs. Using **Principal Component Analysis (PCA)** and **K-Means Clustering**, we identified a distinct transition path: **Initial (Native) ➔ Intermediate ➔ Drug-Induced Stable State**. The emergence of a "Third Configuration" provides quantitative evidence of drug efficacy.---
+This project investigates drug-induced conformational changes in proteins by analyzing the distance variations between four key amino acid pairs. Using **Principal Component Analysis (PCA)** and **K-Means Clustering**, identified a distinct transition path: **Initial (Native) ➔ Intermediate ➔ Drug-Induced Stable State**. The emergence of a "Third Configuration" provides quantitative evidence of drug efficacy.---
 
 ## Simulations & Data
-
 This analysis combines distance distribution observations with dimensionality reduction trajectories from high-dimensional data. The following are key data and results charts:
 
 <div align="center">
@@ -23,7 +22,7 @@ This analysis combines distance distribution observations with dimensionality re
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/539695d4-7774-4e0f-bc26-4e03c9ad05ce" width="600">
-  <p><i><b>Figure 3:</b> K-Means Clustering Results in PCA Space - Protein conformational evolution path trajectory diagram</i></p>
+  <p><i><b>Figure 3:</b> K-Means Clustering Results in PCA Space (drug)- Protein conformational evolution path trajectory diagram</i></p>
 </div>
 
 ---
@@ -31,8 +30,8 @@ This analysis combines distance distribution observations with dimensionality re
 ##  Scientific Logic 
 
 ### 1. Distance distribution as the basis of configuration (Distance as Descriptors)
-* **No Drug (Fig 1)**：The relatively concentrated distribution of distance indicates that the protein belongs to a single primitive state.
-* **Drug (Fig 2)**：The distribution exhibited a significant population shift, confirming that the drug induced structural changes, prompting the protein to explore new energy stability points.
+* **No Drug (Fig 1)**：The relatively concentrated distribution of distance indicates that the protein belongs to a primitive state.
+* **Drug (Fig 2)**：The distribution exhibited a significant population shift, confirming that the drug induced structural changes, prompting the protein to explore new stability points.
 
 ### 2. Transition Trajectory
 PCA is used to reduce the dimensionality of 4-dimensional data and label the time series (Fig 3):
