@@ -17,3 +17,4 @@ Thumbs.db
 .env
 .kaggle/
 air_quality_postgres_data/
+*.txt
